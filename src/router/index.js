@@ -1,15 +1,25 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Hello from '@/components/Hello';
+import Design from '@/components/Design';
+import Config from '@/components/Config';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'Hello',
-      component: Hello,
+      path: '/design',
+      name: 'design',
+      component: Design,
+    },
+    {
+      path: '/config',
+      name: 'config',
+      component: Config,
+    },
+    {
+      path: '*',
+      redirect: '/design',
     },
   ],
 });
