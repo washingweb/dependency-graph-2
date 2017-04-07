@@ -6,20 +6,21 @@ import Config from '@/components/Config';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
-      path: '/design',
+      path: `${routePrefix}/design`,
       name: 'design',
       component: Design,
     },
     {
-      path: '/config',
+      path: `${routePrefix}/config`,
       name: 'config',
       component: Config,
     },
     {
       path: '*',
-      redirect: '/design',
+      redirect: `${routePrefix}/design`,
     },
   ],
 });
