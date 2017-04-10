@@ -63,5 +63,9 @@ module.exports = {
         }
       }
     ]
+  },
+  externals: {
+    // make viz.js happy
+    "fs": "fs"
   }
 }

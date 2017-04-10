@@ -2,6 +2,11 @@
 
 > pool man's dependency graph
 
+## layout
+The tool use viz.js to layout
+- [github](https://github.com/mdaines/viz.js)
+- [demo](http://viz-js.com/)
+
 ## Build Setup
 
 ``` bash
