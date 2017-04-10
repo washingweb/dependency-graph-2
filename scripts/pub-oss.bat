@@ -1,0 +1,3 @@
+echo publish to %DEP_GRAPH_OSS_PREFIX%...
+
+oss cp -rf ./dist/ %DEP_GRAPH_OSS_PREFIX%/

@@ -1,6 +1,8 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
-var assetsPublicPath = process.env['DEP_GRAPH_ASSETS_SUB_DIRECTORY']
+var assetsPublicPath = process.env['DEP_GRAPH_ASSETS_SUB_DIRECTORY'] + '/'
+
+console.log(`assetsPublicPath： ${assetsPublicPath}`);
 
 module.exports = {
   build: {
